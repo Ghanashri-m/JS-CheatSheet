@@ -1,1 +1,9 @@
-1. new Set(array).size !== array.length // contains duplicate
+Find Duplicate.
+new Set(array).size !== array.length
+
+Remove duplicate
+let latest = [... new Set(array)];
+
+Create Matrix given m and n
+1. Array.from({length: m}. () => (Array.from({length: n}, () => (0))))
+2. Array(m).fill(Array(n).fill(0));
