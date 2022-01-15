@@ -7,3 +7,7 @@ let latest = [... new Set(array)];
 Create Matrix given m and n
 1. Array.from({length: m}. () => (Array.from({length: n}, () => (0))))
 2. Array(m).fill(Array(n).fill(0));
+
+To see if shifting a string results in another given string at some point, concatinate any 1 string with itself and check if the other string is a sub string.
+
+ex: s1: abcd, s2: cdab, s2: cdabcdab and abcd is a substring of cdabcdab therefore, answer is true.
