@@ -20,3 +20,23 @@ ex: s1: abcd, s2: cdab, s2: cdabcdab and abcd is a substring of cdabcdab therefo
        // matrix[c][r] = matrix[r][c]
     }
   }
+
+6. Prototype is used to add "properties/methods" to a constructor function as in example below.
+   Example 1: 
+    function Person(name) {
+      this.name = name;
+    }
+    Person.prototype.getName = function() {
+      return this.name;
+    }
+
+    var person = new Person("John Doe");
+    person.getName() //"John Doe"
+   
+   Example2:
+    function ConstructorFunction(name){
+      this.name = name //referencing to current executing object
+    }
+    ConstructorFunction.prototype.age = 18
+    let objectName = new ConstructorFunction("Bob")
+    console.log(objectName.age) //18
